@@ -21,6 +21,17 @@ nome_responsavel VARCHAR(500) NOT NULL,
 telefone_responsavel VARCHAR(11) NOT NULL
 );
 
+CREATE TABLE tbl_paciente_bkp(
+cod_paciente INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+nome_paciente VARCHAR(500) NOT NULL,
+telefone_paciente VARCHAR(10),
+celular_paciente VARCHAR(11) NOT NULL,
+email_paciente VARCHAR(100) NOT NULL,
+nome_responsavel VARCHAR(500) NOT NULL,
+telefone_responsavel VARCHAR(11) NOT NULL,
+date_delete datetime
+);
+
 #CRIAÇÃO DA TABELA MÉDICO
 CREATE TABLE tbl_medico(
 cod_medico INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
